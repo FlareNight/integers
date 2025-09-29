@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integers - 6th Grade Mathematics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Integers</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#operations" class="nav-link">Operations</a></li>
+                <li><a href="#quiz" class="nav-link">Quiz</a></li>
+                <li><a href="#credits" class="nav-link">Credits</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-title">Integers</h1>
+            <p class="hero-subtitle">6th Grade Mathematics</p>
+            <p class="hero-author">By A Subhash, G06E, Sharada Vidya Mandira</p>
+            <button class="btn btn--primary hero-btn" onclick="scrollToSection('introduction')">
+                Start Learning
+            </button>
+        </div>
+        <div class="hero-decoration"></div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="section">
+        <div class="container">
+            <h2 class="section-title">Introduction to Integers</h2>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Definition</h3>
+                    <p>The numbers..., -3, -2, -1, 0, 1, 2, 3,... together are called <strong>integers</strong> and their set is denoted by <strong>Z</strong>. Integers are whole numbers which can be positive, negative, or zero.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>Types of Integers</h3>
+                    <div class="types-grid">
+                        <div class="type-item positive">
+                            <h4>Positive Integers</h4>
+                            <p>+1, +2, +3,... are called positive numbers/integers. They are generally written as 1, 2, 3,...</p>
+                        </div>
+                        <div class="type-item negative">
+                            <h4>Negative Integers</h4>
+                            <p>-1, -2, -3,... are called negative numbers/integers.</p>
+                        </div>
+                        <div class="type-item zero">
+                            <h4>Zero</h4>
+                            <p>Zero (0) is neither positive nor negative.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>Number Line</h3>
+                    <p>A Number line of Integers:</p>
+                    <ul>
+                        <li>Has Zero in the middle</li>
+                        <li>Has positive integers to the right of 0</li>
+                        <li>Has negative integers to the left of 0</li>
+                    </ul>
+                    <div class="number-line" id="numberLine">
+                        <div class="number-line-container">
+                            <div class="number" data-value="-5">-5</div>
+                            <div class="number" data-value="-4">-4</div>
+                            <div class="number" data-value="-3">-3</div>
+                            <div class="number" data-value="-2">-2</div>
+                            <div class="number" data-value="-1">-1</div>
+                            <div class="number zero" data-value="0">0</div>
+                            <div class="number" data-value="1">1</div>
+                            <div class="number" data-value="2">2</div>
+                            <div class="number" data-value="3">3</div>
+                            <div class="number" data-value="4">4</div>
+                            <div class="number" data-value="5">5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>Absolute Value</h3>
+                    <p>The absolute value of an integer is its numerical value irrespective of its sign.</p>
+                    <div class="rules-list">
+                        <div class="rule-item">The absolute value of a positive number is the number itself.</div>
+                        <div class="rule-item">The absolute value of 0 is 0 itself.</div>
+                        <div class="rule-item">The absolute value of a negative integer is its opposite, that is a positive number.</div>
+                        <div class="rule-item">Thus, the absolute value of a number is never negative.</div>
+                        <div class="rule-item">The symbol |&nbsp;| is used for representing absolute value.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations Section -->
+    <section id="operations" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Operations on Integers</h2>
+            
+            <div class="operations-grid">
+                <div class="operation-card">
+                    <h3>Properties</h3>
+                    <div class="properties-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="closure">Closure</button>
+                            <button class="tab-btn" data-tab="commutative">Commutative</button>
+                            <button class="tab-btn" data-tab="associative">Associative</button>
+                            <button class="tab-btn" data-tab="identity">Identity</button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-panel active" id="closure">
+                                <div class="property-item">
+                                    <h4>Addition</h4>
+                                    <p>If a and b are two integers, then a + b = c. Ex: -4 + 7 = +3. <strong>Holds Good</strong></p>
+                                </div>
+                                <div class="property-item">
+                                    <h4>Subtraction</h4>
+                                    <p>If a and b are two integers, then a - b = c. Ex: -4 - 7 = -11. <strong>Holds Good</strong></p>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="commutative">
+                                <div class="property-item">
+                                    <h4>Addition</h4>
+                                    <p>If a and b are two integers, then a + b = b + a. Ex: -4 + 7 = 7 + (-4) = +3. <strong>Holds Good</strong></p>
+                                </div>
+                                <div class="property-item">
+                                    <h4>Subtraction</h4>
+                                    <p>a - b ≠ b - a. Ex: -4 - 7 ≠ 7 - (-4). -11 ≠ +3. <strong>Doesn't Hold Good</strong></p>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="associative">
+                                <div class="property-item">
+                                    <h4>Addition</h4>
+                                    <p>a + (b + c) = (a + b) + c. Ex: -3 + [(-5) + 6] = [(-3) + (-5)] + 6 = -2 = -2. <strong>Holds Good</strong></p>
+                                </div>
+                                <div class="property-item">
+                                    <h4>Subtraction</h4>
+                                    <p>a - (b - c) ≠ (a - b) - c. Ex: -3 - [(-5) – 6] ≠ [(-3) - (-5)] – 6. +8 ≠ -4. <strong>Doesn't Hold Good</strong></p>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="identity">
+                                <div class="property-item">
+                                    <h4>Addition</h4>
+                                    <p>a + 0 = 0 + a = a. Ex: -5 + 0 = 0 + (-5) = -5. <strong>0 is the additive identity element.</strong></p>
+                                </div>
+                                <div class="property-item">
+                                    <h4>Subtraction</h4>
+                                    <p>a - 0 = a but 0 - a ≠ a. Ex: –5 – 0 = −5; 0 – (-5) = +5. <strong>There is no identity element.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="operation-card">
+                    <h3>Addition Rules</h3>
+                    <div class="rules-list">
+                        <div class="rule-item">The sum of two positive integers is the sum of their absolute values with a positive sign. <br><strong>Ex:</strong> (+3) + (+2) = +5</div>
+                        <div class="rule-item">The sum of two negative integers is the sum of their absolute values with a negative sign. <br><strong>Ex:</strong> (-3) + (-2) = -5</div>
+                        <div class="rule-item">The sum of two integers having opposite signs is the difference of their absolute values with the sign of the integer of the greatest absolute value. <br><strong>Ex:</strong> (-3) + (+2) = (-1); (+3) + (-2) = (+1)</div>
+                    </div>
+                </div>
+
+                <div class="operation-card">
+                    <h3>Subtraction</h3>
+                    <p>Subtracting an integer is the same as adding its additive inverse.</p>
+                    <p>If a and b are two integers, then <strong>a - b = a + (-b)</strong></p>
+                    <p><strong>Example:</strong> -3 – 5 = -3 + (-5) = -8</p>
+                </div>
+
+                <div class="operation-card">
+                    <h3>Additive Inverse</h3>
+                    <p>If a is an integer, then <strong>a + (-a) = 0</strong>. Here, a and -a are called additive inverses of each other.</p>
+                    <p><strong>Example:</strong> (-6) + (+6) = 0</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section">
+        <div class="container">
+            <h2 class="section-title">Interactive Quiz</h2>
+            <p class="quiz-description">Test your knowledge about integers with this 15-question quiz!</p>
+            
+            <div class="quiz-container" id="quizContainer">
+                <div class="quiz-header">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <span class="progress-text" id="progressText">Question 1 of 15</span>
+                    </div>
+                    <div class="quiz-score">
+                        <span>Score: <span id="currentScore">0</span>/15</span>
+                    </div>
+                </div>
+
+                <div class="question-container" id="questionContainer">
+                    <div class="question" id="question"></div>
+                    <div class="options" id="options"></div>
+                </div>
+
+                <div class="quiz-controls">
+                    <button class="btn btn--outline" id="prevBtn" onclick="previousQuestion()" disabled>Previous</button>
+                    <button class="btn btn--primary" id="nextBtn" onclick="nextQuestion()">Next Question</button>
+                </div>
+
+                <div class="quiz-result hidden" id="quizResult">
+                    <h3>Quiz Complete!</h3>
+                    <div class="final-score" id="finalScore"></div>
+                    <div class="score-message" id="scoreMessage"></div>
+                    <button class="btn btn--primary" onclick="restartQuiz()">Retake Quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credits Section -->
+    <section id="credits" class="section section-alt">
+        <div class="container">
+            <div class="credits-content">
+                <h2 class="section-title">Credits</h2>
+                <div class="credits-card">
+                    <div class="credits-text">Made By A Subhash</div>
+                    <p class="credits-subtitle">6th Grade Mathematics - Integers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
